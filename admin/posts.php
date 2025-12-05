@@ -14,6 +14,7 @@ try {
     
     // Call allPosts function and update variable name
     $posts = allPosts($pdo); 
+    $posts = array_reverse($posts);
     
     $title = 'Admin Post list'; 
     

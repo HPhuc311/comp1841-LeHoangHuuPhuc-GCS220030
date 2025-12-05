@@ -4,6 +4,8 @@ try {
     include __DIR__ . '/includes/DatabaseFunctions.php'; 
     
     $posts = allPosts($pdo); 
+
+    $posts = array_reverse($posts);
     
     // ADDED: Get comments for each post
     foreach ($posts as &$post) {

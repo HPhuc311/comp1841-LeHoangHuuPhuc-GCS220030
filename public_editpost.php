@@ -79,7 +79,7 @@ if (isset($_POST['posttext']) && isset($_POST['userid']) && isset($_POST['module
          
          ob_start();
          // Pass $errors to the template
-         include __DIR__ . '/templates/admin_editpost.html.php'; // Use shared template
+         include __DIR__ . '/templates/public_editpost.html.php'; // Use shared template
          $output = ob_get_clean();
          
          include __DIR__ . '/templates/layout.html.php';
@@ -108,7 +108,7 @@ if (isset($_POST['posttext']) && isset($_POST['userid']) && isset($_POST['module
         
         ob_start();
         // Template view: Update template name (using shared admin_editpost)
-        include __DIR__ . '/templates/admin_editpost.html.php';
+        include __DIR__ . '/templates/public_editpost.html.php';
         $output = ob_get_clean();
         
         include __DIR__ . '/templates/layout.html.php';
